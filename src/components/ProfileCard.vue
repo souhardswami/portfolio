@@ -29,6 +29,7 @@
 }
 
 .profilecard info {
+                    margin-top: 10px;
                     max-width: 240px;
                     display: inline-block;
 
