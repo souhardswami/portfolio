@@ -1,0 +1,69 @@
+<template>
+    <div class="navbar">
+              <SideBar :action="drawer"/>
+              <nav>
+                        
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAAYklEQVRoge3ZsQ2AQAzFUAexAqMxOqwDG0ATSBT5TeBfXBEdSHoSwFEdkSGAqzoiw1IdkGXMkAD26ghJkiTpFwFs1REZvBC7cUg3Yx67JEmS9GrMR4+nbjdjhqzAWR0h6Xs3aFgFl74oro8AAAAASUVORK5CYII="  @click.stop="drawer = !drawer">
+                        
+                        <div id="link">Employee/profile</div>
+                        
+                        <div id="back">
+
+                          back
+                          
+                        </div>
+                         
+              </nav>
+              
+            
+                
+  </div>
+</template>
+
+
+<script>
+
+import SideBar from "@/components/SideBar.vue"
+export default {
+    components:{
+        SideBar
+    },
+    data: () => ({
+        drawer: null,
+  }),
+}
+</script>
+
+<style scoped>
+.navbar{
+    margin:0 100px;
+}
+
+  nav{
+      display: flex;
+      height: 50px;
+      width: 100%;
+      align-items: center;
+      /* background-color: red; */
+  }
+  
+  img{
+    width:20px;
+    margin-right: auto;
+    
+   
+  }
+  #link{
+     margin-right: 40%;
+     
+
+  }
+
+
+   
+
+            
+
+
+
+</style>
