@@ -15,6 +15,7 @@
                     class="ma-2"
                     color="primary"
                     text-color="white"
+                    
                     >
                     {{skill}}
                     
@@ -56,8 +57,8 @@ export default {
 }
 
 .skills{
-    flex-basis: 50%;
-    /* margin:10px; */
+    flex-basis: 70%;
+    
 }
 .skillelement{
     display: flex;

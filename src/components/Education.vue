@@ -47,9 +47,4 @@
     height: 30px;
 }
 
-.education{
-    
-    background-color:red;
-    /* margin:10px; */
-}
 </style>

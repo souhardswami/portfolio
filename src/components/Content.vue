@@ -5,7 +5,7 @@
             <LeftDiv/>
         </div>
         <div id="right">
-            i am right
+           <RightDiv/>
         </div>
 
     </div>
@@ -13,10 +13,12 @@
 
 <script>
 import LeftDiv from "@/components/LeftDiv.vue"
+import RightDiv from "@/components/RightDiv.vue"
 export default {
 
     components:{
-        LeftDiv
+        LeftDiv,
+        RightDiv
     }
     
 }
@@ -30,6 +32,10 @@ export default {
 
 #left{
     flex-basis: 60%;
+    /* background-color: red; */
+}
+#right{
+    flex-basis: 40%;
     /* background-color: red; */
 }
 </style>
