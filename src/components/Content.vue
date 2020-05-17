@@ -28,14 +28,15 @@ export default {
 .content{
   margin:0 100px;
   display: flex;
+  justify-content: space-between;
 }
 
 #left{
-    flex-basis: 60%;
+    flex-basis: 58%;
     /* background-color: red; */
 }
 #right{
-    flex-basis: 40%;
+    flex-basis: 39%;
     /* background-color: red; */
 }
 </style>

@@ -3,7 +3,7 @@
     <v-card class="mx-auto education" outlined>
     <v-list-item three-line>
       <v-list-item-content>
-        <v-list-item-title class="headline mb-1">Team Notes</v-list-item-title>
+        <v-list-item-title class="headline mb-1">Tasks</v-list-item-title>
         <v-btn 
         color="grey"
                 
@@ -21,19 +21,23 @@
         <br>
 
         
-        <div class="profilecard" v-for="i in 4" :key="i">
-                <v-avatar color="primary" small>
-                        <span class="white--text headline">KP</span>
-                </v-avatar>
+        <div class="profilecard" v-for="i in 6" :key="i">
                 <info>
                     
-                                 <span>Kamal Pratap  2:30</span><br>
-                                 <span>Hey Guys,I've pushed my progress to the Master Branch</span>
+                                 <div class="upline">
+                                    <v-icon color="primary" left>fa fa-check-square</v-icon>Add checkout button
+                                 </div>
+                                 <div class="downline">
+                                    2MIN AGO <i class="fa fa-calendar"></i>: 03:00pm 02/05/2020
+                                 </div>
                                  
                                  
                 </info>
+                <v-avatar class="avtar" color="primary"  x-small>
+                        <span class="white--text headline">KP</span>
+                </v-avatar>
                 
-                <hr id="hr" v-if="i!='4'">
+                <hr id="hr" v-if="i!='6'">
         </div>
         
 
@@ -63,7 +67,7 @@
                 width: 340px;
                 margin: 10px 0 0 0px;
                 height: 80px;
-                padding-top:20px;
+                
 }
 
 .profilecard img {
@@ -88,9 +92,15 @@
 #hr{
     border-top: 2px solid grey;
     margin-top:12px;
-    margin-left:12%;
+   
 }
 
+.avtar{
+    margin-top:-20px;
+    transform: scale(0.75);
+    margin-left:159px;
+
+}
 
 </style>
 

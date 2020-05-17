@@ -4,7 +4,17 @@
     <v-list-item three-line>
       <v-list-item-content>
         <v-list-item-title class="headline mb-1">Experience</v-list-item-title>
-        <v-btn absolute dark fab small top right color="gray" flat class="btn">
+        <v-btn 
+        color="grey"
+                x-small
+                absolute
+                top
+                right
+                fab
+                
+                outlined
+        class="btn"
+        >
               <v-icon>mdi-plus</v-icon>
         </v-btn>
         <br>
@@ -35,7 +45,6 @@
 
 .btn{
     margin-top:30px;
-    width: 30px;
-    height: 30px;
+    
 }
 </style>

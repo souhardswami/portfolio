@@ -1,10 +1,21 @@
 <template>
     
-    <v-card class="mx-auto activity" outlined>
+    <v-card class="mx-auto " outlined>
     <v-list-item three-line>
       <v-list-item-content>
-        <v-list-item-title class="headline mb-1">Information</v-list-item-title>
-        <v-btn absolute dark fab small top right color="gray" flat class="btn">
+        <v-list-item-title class="headline mb-1 mx-4">Information</v-list-item-title>
+        <v-btn 
+        color="grey"
+                x-small
+                absolute
+                top
+                right
+                fab
+                
+                outlined
+        class="btn"
+        
+         >
               <v-icon>mdi-plus</v-icon>
         </v-btn>
         <br>
@@ -18,6 +29,7 @@
                 <v-list-item-title>{{info.value}}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
+            <v-divider/>
         </div>
         
       </v-list-item-content>
@@ -53,7 +65,7 @@ export default {
 
 .btn{
     margin-top:30px;
-    width: 30px;
-    height: 30px;
+    
+
 }
 </style>
