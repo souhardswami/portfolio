@@ -9,7 +9,7 @@
                         
                         <div id="back">
 
-                          back
+                          BACK
                           
                         </div>
                          
@@ -57,6 +57,9 @@ export default {
      margin-right: 40%;
      
 
+  }
+  #back{
+    margin-right:10px;
   }
 
 

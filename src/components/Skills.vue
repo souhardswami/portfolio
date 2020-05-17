@@ -66,7 +66,9 @@ export default {
 }
 
 .skills{
-    flex-basis: 70%;
+    /* flex-basis: 48%; */
+    margin-top:20px;
+
     
 }
 .skillelement{

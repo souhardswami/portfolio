@@ -1,6 +1,6 @@
 <template>
     
-    <v-card class="mx-auto education" outlined>
+    <v-card class="mx-auto teamnotes" outlined>
     <v-list-item three-line>
       <v-list-item-content>
         <v-list-item-title class="headline mb-1">Team Notes</v-list-item-title>
@@ -57,6 +57,13 @@
     margin-top:30px;
     
 }
+
+
+.teamnotes{
+  margin-top:20px;
+}
+
+
 
 
 .profilecard  {

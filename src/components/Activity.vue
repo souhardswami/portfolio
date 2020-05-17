@@ -29,7 +29,7 @@
                 <v-list-item-title>{{info.value}}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
-            <v-divider/>
+            <v-divider v-if="info.key!='LINKS'"/>
         </div>
         
       </v-list-item-content>

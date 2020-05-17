@@ -50,6 +50,13 @@
 
 <style scoped>
 
+.education{
+  margin-top:20px;
+  
+  /* flex-basis: 48%; */
+}
+
+
 
 .btn{
     margin-top:30px;

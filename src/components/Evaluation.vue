@@ -48,56 +48,59 @@
     
     <v-list>
       <v-list-item>
-          <v-list-item-content>
+        <v-list-item-content>
                 <v-list-item-title >Job Name</v-list-item-title>
             </v-list-item-content>
+            
+            
             <v-list-item-content>
-                <v-btn   text color="primary" >
+                    
+            </v-list-item-content>
+            <v-list-item-content>
+                <v-btn  class="ma-1 pa-0" text color="primary" >
                     <v-icon left x-small>fa fa-check</v-icon>PROCEED
                 </v-btn>
             </v-list-item-content>
-            
-            
             <v-list-item-content>
-                <v-btn   class="mx-10"  text fab small >
+                <v-btn   class="mx-10" text fab small >
                 <v-icon>fa fa-ban</v-icon>
                 </v-btn>
             </v-list-item-content>
-            
             <v-list-item-content>
                     <v-btn  class="mx-10"  text fab  small >
                         <v-icon dark>fa fa-ellipsis-h</v-icon>
                     </v-btn>
             </v-list-item-content>
-            
-        
       </v-list-item>
       <v-divider/>
       <v-list-item>
-          <v-list-item-content>
+        <v-list-item-content>
                 <v-list-item-title >Pool Name</v-list-item-title>
             </v-list-item-content>
+            
+            
             <v-list-item-content>
-                <v-btn   text color="primary" >
+                    
+            </v-list-item-content>
+            <v-list-item-content>
+                <v-btn  class="ma-1 pa-0" text color="primary" >
                     <v-icon left x-small>fa fa-check</v-icon>PROCEED
                 </v-btn>
             </v-list-item-content>
-            
-            
             <v-list-item-content>
-                <v-btn   class="mx-10"  text fab small >
+                <v-btn   class="mx-10" text fab small >
                 <v-icon>fa fa-ban</v-icon>
                 </v-btn>
             </v-list-item-content>
-            
             <v-list-item-content>
                     <v-btn  class="mx-10"  text fab  small >
                         <v-icon dark>fa fa-ellipsis-h</v-icon>
                     </v-btn>
             </v-list-item-content>
-            
-        
       </v-list-item>
+      
+
+      
     </v-list>
   </v-card>
 </template>

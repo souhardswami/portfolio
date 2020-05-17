@@ -1,6 +1,6 @@
 <template>
     
-    <v-card class="mx-auto education" outlined>
+    <v-card class="mx-auto tasks" outlined>
     <v-list-item three-line>
       <v-list-item-content>
         <v-list-item-title class="headline mb-1">Tasks</v-list-item-title>
@@ -55,6 +55,10 @@
 
 
 <style scoped>
+
+.tasks{
+  margin-top:20px;
+}
 
 
 .btn{

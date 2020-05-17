@@ -1,6 +1,6 @@
 <template>
     
-    <v-card class="mx-auto " outlined>
+    <v-card class="mx-auto experience" outlined>
     <v-list-item three-line>
       <v-list-item-content>
         <v-list-item-title class="headline mb-1">Experience</v-list-item-title>
@@ -41,7 +41,9 @@
 
 
 <style scoped>
-
+.experience{
+  margin-top:20px;
+}
 
 .btn{
     margin-top:30px;

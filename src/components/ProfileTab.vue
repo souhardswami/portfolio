@@ -30,7 +30,7 @@
                 <Activity/>
             </div>
             <div v-else>
-                EMPTY
+                <EmptyContent/>
             </div>
             
           
@@ -43,9 +43,11 @@
 
 <script>
 import Activity from "@/components/Activity.vue"
+import EmptyContent from "@/components/EmptyContent.vue"
   export default {
     components:{
-        Activity
+        Activity,
+        EmptyContent
     },
     data () {
       return {
