@@ -6,7 +6,7 @@
         <v-list-item-title class="headline mb-1">Skills</v-list-item-title>
         <v-btn 
         
-        color="grey"
+        color="black"
                 x-small
                 absolute
                 top
@@ -19,19 +19,19 @@
         </v-btn>
         <br>
 
-        <div class="skillelement">
+        <v-list-item-title class="skillelement my-2">
             <div v-for="skill in skillset" :key="skill">
                 <v-chip
-                    class="ma-2"
-                    color="primary"
-                    text-color="white"
+                    class="ma-2 chip"
+                    color="blue lighten-5"
+                    text-color="black"
                     
                     >
                     {{skill}}
                     
                     </v-chip>
             </div>
-        </div>
+        </v-list-item-title>
 
         
         
@@ -50,7 +50,7 @@
 export default {
     data(){
         return{
-            skillset:['Python','Web Devlopment','CSS','Java','Python','Web Devlopment','CSS','Web Devlopment','CSS','Python','Java','Python','Web Devlopment','CSS']
+            skillset:['Python','Web Devlopment','CSS','Web Devlopment','Python','CSS','CSS','Web Devlopment','Python','Web Devlopment','Python','CSS','CSS','Web Devlopment','Python']
         }
     }
 }
@@ -75,6 +75,9 @@ export default {
     display: flex;
     flex-wrap: wrap;
 }
+
+
+
 </style>
 
 

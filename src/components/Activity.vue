@@ -1,11 +1,11 @@
 <template>
     
-    <v-card class="mx-auto " outlined>
+    <!-- <v-card class="mx-auto " outlined>
     <v-list-item three-line>
       <v-list-item-content>
         <v-list-item-title class="headline mb-1 mx-4">Information</v-list-item-title>
         <v-btn 
-        color="grey"
+        color="black"
                 x-small
                 absolute
                 top
@@ -22,8 +22,8 @@
 
         <div v-for="info in information" :key="info">
             <v-list-item >
-              <v-list-item-action>
-                <h3>{{info.key}}</h3>
+              <v-list-item-action class="title">
+                {{info.key}}
               </v-list-item-action>
               <v-list-item-content>
                 <v-list-item-title>{{info.value}}</v-list-item-title>
@@ -37,6 +37,49 @@
       
     </v-list-item>
 
+  </v-card> -->
+
+  <v-card
+    class="mx-auto"
+    
+    tile
+    outlined
+  >
+
+  <v-list-item-title class="headline mb-1 mx-8 my-4">Information</v-list-item-title>
+        <v-btn 
+        color="black"
+                x-small
+                absolute
+                top
+                right
+                fab
+                
+                outlined
+        class="btn"
+        
+         >
+              <v-icon>mdi-plus</v-icon>
+        </v-btn>
+        <br>
+    <v-list flat>
+      
+      <div v-for="item in information" :key="item.key">
+        <v-list-item>
+          
+          <v-list-item-content class="title mx-4">
+            <v-list-item-title color="black">{{item.key}}</v-list-item-title>
+          </v-list-item-content>
+          <v-list-item-content class="content">
+            <v-list-item-title color="black">{{item.value1}}</v-list-item-title>
+            <v-list-item-title  v-if="item.value2!=null" color="black">{{item.value2}}</v-list-item-title>
+          </v-list-item-content>
+        
+        </v-list-item>
+      <v-divider v-if="item.key!='LINKS'"/>
+      </div>
+      
+    </v-list>
   </v-card>
 
 </template>
@@ -48,10 +91,10 @@ export default {
         return {
             information:
                 [
-                    {key:'EMAIL',value:'KamalPratap@abc.com'},
-                    {key:'PHONE',value:'9876543210'},
-                    {key:'SOCIAL',value:'github.com/kamalpratap'},
-                    {key:'LINKS',value:'Codepen.com/Kamalpratap'}
+                    {key:'EMAIL',value1:'Kamalpratap@xyz.com'},
+                    {key:'PHONE',value1:'+91-9876543234'},
+                    {key:'SOCIAL',value1:'github.com/kamalpratap'},
+                    {key:'LINKS',value1:'codepen.io/kamal',value2:'yahool.io/kamal'}
                 ]
             
         }
@@ -67,5 +110,10 @@ export default {
     margin-top:30px;
     
 
+}
+
+.content{
+
+  margin-left:-600px;
 }
 </style>

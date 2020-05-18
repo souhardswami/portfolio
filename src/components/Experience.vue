@@ -3,9 +3,9 @@
     <v-card class="mx-auto experience" outlined>
     <v-list-item three-line>
       <v-list-item-content>
-        <v-list-item-title class="headline mb-1">Experience</v-list-item-title>
+        <v-list-item-title class="headline mb-1 mx-4">Experience</v-list-item-title>
         <v-btn 
-        color="grey"
+        color="black"
                 x-small
                 absolute
                 top
@@ -19,13 +19,13 @@
         </v-btn>
         <br>
 
-        <v-list-item-title class="headline mb-1">Lead Designer</v-list-item-title>
-        <div class="experiance-info">
-            <h5>Google. Inc.</h5>
-            <h5>Sep 2019 -Dec 2019</h5>
-            <h5> During my internship,I developed UI and UX for an android app called Google Keep. I completely Re-Designed the application.</h5>
+        <v-list-item-title class="headline mb-1  mx-4">Lead Designer</v-list-item-title>
+        <v-list-item-title class="thin body-2 mx-4">
+            <span>Google. Inc.</span><br>
+            <span>Sep 2019 -Dec 2019</span><br>
+            <span> During my internship,I developed UI and UX for an android app called Google Keep. I completely Re-Designed the<br> application.</span>
             
-        </div>
+        </v-list-item-title>
 
         
         

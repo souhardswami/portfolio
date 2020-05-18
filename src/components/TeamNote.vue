@@ -5,7 +5,7 @@
       <v-list-item-content>
         <v-list-item-title class="headline mb-1">Team Notes</v-list-item-title>
         <v-btn 
-        color="grey"
+        color="black"
                 
                 x-small
                 absolute
@@ -22,18 +22,19 @@
 
         
         <div class="profilecard" v-for="i in 4" :key="i">
-                <v-avatar color="primary" small>
-                        <span class="white--text headline">KP</span>
+                <v-avatar color="primary icon" small>
+                        <span class="white--text title">KP</span>
                 </v-avatar>
                 <info>
                     
-                                 <span>Kamal Pratap  2:30</span><br>
-                                 <span>Hey Guys,I've pushed my progress to the Master Branch</span>
+                                 <span class="subtitle-2">Kamal Pratap<v-icon class="circle"  >fa fa-circle</v-icon><span class="text--disabled caption">02:30 pm</span></span><br>
+                                 <span class="body-2">Hey Guys,I've pushed my progress to the Master Branch</span>
                                  
                                  
                 </info>
                 
-                <hr id="hr" v-if="i!='4'">
+                
+                <v-divider id="hr" v-if="i!='4'"/>
         </div>
         
 
@@ -62,6 +63,11 @@
 .teamnotes{
   margin-top:20px;
 }
+.circle{
+  font-size:4px;
+  width: 10px;
+  
+}
 
 
 
@@ -69,19 +75,8 @@
 .profilecard  {
                 width: 340px;
                 margin: 10px 0 0 0px;
-                height: 80px;
+                height: 70px;
                 padding-top:20px;
-}
-
-.profilecard img {
-                    width: 40px;
-                    height: 40px;
-
-                    float: left;
-
-                    border-radius: 50%;
-
-                    margin: 0 18px 0 0;
 }
 
 .profilecard info {
@@ -93,10 +88,16 @@
 
 }
 #hr{
-    border-top: 2px solid grey;
+    /* border-top: 2px solid grey; */
     margin-top:12px;
-    margin-left:12%;
+    margin-left:14%;
 }
+
+.icon{
+  margin-top:-20px;
+  transform: scale(0.8);
+}
+
 
 
 </style>

@@ -8,10 +8,8 @@
     class="mx-auto"
     outlined
   >
-  
-
   <v-list>
-      <v-list-item>
+      <v-list-item class="manage">
             <v-list-item-content>
                 <v-list-item-title >Evaluation</v-list-item-title>
             </v-list-item-content>
@@ -31,7 +29,7 @@
                 <v-icon>fa fa-paper-plane</v-icon>
                 </v-btn>
             </v-list-item-content>
-            <div class="my-2">
+            <div >
                     
                 <v-btn text small color="primary">MORE</v-btn>
             </div>
@@ -46,8 +44,8 @@
 
 
     
-    <v-list>
-      <v-list-item>
+    <v-list >
+      <v-list-item class="manage">
         <v-list-item-content>
                 <v-list-item-title >Job Name</v-list-item-title>
             </v-list-item-content>
@@ -72,8 +70,10 @@
                     </v-btn>
             </v-list-item-content>
       </v-list-item>
+    </v-list>
       <v-divider/>
-      <v-list-item>
+    <v-list>
+      <v-list-item class="manage">
         <v-list-item-content>
                 <v-list-item-title >Pool Name</v-list-item-title>
             </v-list-item-content>
@@ -105,18 +105,12 @@
   </v-card>
 </template>
 
-<script>
-  export default {
-    data () {
-      return {
-        items: [
-          { icon: true, title: 'Jason Oner', avatar: 'https://cdn.vuetifyjs.com/images/lists/1.jpg' },
-          { title: 'Travis Howard', avatar: 'https://cdn.vuetifyjs.com/images/lists/2.jpg' },
-          { title: 'Ali Connors', avatar: 'https://cdn.vuetifyjs.com/images/lists/3.jpg' },
-          { title: 'Cindy Baker', avatar: 'https://cdn.vuetifyjs.com/images/lists/4.jpg' },
-        ],
-      }
-    },
-  }
-</script>
+
+<style scoped>
+
+.manage{
+  margin-top: -12px;
+  margin-bottom: -12px;
+}
+</style>
 

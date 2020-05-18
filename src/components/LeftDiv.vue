@@ -42,12 +42,12 @@ export default {
     
 }
 .left{
-    flex-basis: 43%;
+    flex-basis: 49%;
     
     
 }
 .right{
-    flex-basis: 55%;
+    flex-basis: 49%;
     
     
 }
