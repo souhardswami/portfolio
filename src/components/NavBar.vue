@@ -1,6 +1,6 @@
 <template>
     <div class="navbar">
-              <SideBar :action="drawer"/>
+              <SideBar @closesidebar="close" :action="drawer"/>
               <nav>
                         
                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAAYklEQVRoge3ZsQ2AQAzFUAexAqMxOqwDG0ATSBT5TeBfXBEdSHoSwFEdkSGAqzoiw1IdkGXMkAD26ghJkiTpFwFs1REZvBC7cUg3Yx67JEmS9GrMR4+nbjdjhqzAWR0h6Xs3aFgFl74oro8AAAAASUVORK5CYII="  @click.stop="drawer = !drawer">
@@ -29,8 +29,13 @@ export default {
         SideBar
     },
     data: () => ({
-        drawer: null,
+        drawer: false,
   }),
+  methods:{
+    close(){
+      this.drawer=false
+    }
+  }
 }
 </script>
 

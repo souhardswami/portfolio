@@ -3,20 +3,20 @@
     <v-toolbar flat>
         <v-tabs v-model="tabs" fixed-tabs>
             <v-tab href="#mobile-tabs-5-1"  disabled>
-                <h6>OVERVIEW</h6>
+                <span>OVERVIEW</span>
 
             </v-tab>
             <v-tab href="#mobile-tabs-5-2"  >
-                <h6>ACTIVITIES</h6>
+                <span>ACTIVITIES</span>
             </v-tab>
             <v-tab href="#mobile-tabs-5-3" >
-                <h6>ASSESSMENTS</h6>
+                <span>ASSESSMENTS</span>
             </v-tab>
             <v-tab href="#mobile-tabs-5-4" >
-                <h6>FILES</h6>
+                <span>FILES</span>
             </v-tab>
             <v-tab href="#mobile-tabs-5-5" >
-                <h6>RESUME</h6>
+                <span>RESUME</span>
             </v-tab>
         </v-tabs>
       
