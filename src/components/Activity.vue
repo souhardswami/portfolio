@@ -101,7 +101,7 @@ export default {
                     {key:'EMAIL',value1:'Kamalpratap@xyz.com'},
                     {key:'PHONE',value1:'+91-9876543234'},
                     {key:'SOCIAL',value1:'github.com/kamalpratap'},
-                    {key:'LINKS',value1:'codepen.io/kamal',value2:'yahool.io/kamal'}
+                    {key:'LINKS',value1:'codepen.io/kamal',value2:'yahool.com/kamal'}
                 ],
             
             
