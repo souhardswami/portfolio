@@ -2,20 +2,20 @@
   <v-card flat>
     <v-toolbar flat>
         <v-tabs v-model="tabs" fixed-tabs>
-            <v-tab href="#mobile-tabs-5-1"  disabled>
+            <v-tab href="#mobile-tabs-5-1" :disabled="ans">
                 <span>OVERVIEW</span>
 
             </v-tab>
             <v-tab href="#mobile-tabs-5-2"  >
                 <span>ACTIVITIES</span>
             </v-tab>
-            <v-tab href="#mobile-tabs-5-3" >
+            <v-tab href="#mobile-tabs-5-3" :disabled="ans">
                 <span>ASSESSMENTS</span>
             </v-tab>
-            <v-tab href="#mobile-tabs-5-4" >
+            <v-tab href="#mobile-tabs-5-4" :disabled="ans">
                 <span>FILES</span>
             </v-tab>
-            <v-tab href="#mobile-tabs-5-5" >
+            <v-tab href="#mobile-tabs-5-5" :disabled="ans">
                 <span>RESUME</span>
             </v-tab>
         </v-tabs>
@@ -51,9 +51,21 @@ import EmptyContent from "@/components/EmptyContent.vue"
     },
     data () {
       return {
-        tabs: null,
+        tabs: 'mobile-tabs-5-2',
         }
     },
+    computed:{
+      
+      ans(){
+        if(this.$route.params.id!=1){
+          return false
+        }
+        else{
+          return true
+        }
+        
+      }
+    }
   }
 </script>
 

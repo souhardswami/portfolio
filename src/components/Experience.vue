@@ -13,6 +13,8 @@
                 fab
                 
                 outlined
+                :class="add2"
+        :ripple="ans"
         class="btn"
         >
               <v-icon>mdi-plus</v-icon>
@@ -39,6 +41,32 @@
 </template>
 
 
+<script>
+
+export default {
+  computed:{
+      add2(){
+      
+      if(this.$route.params.id==1){
+          return 'custom-black-btn'
+      }
+      else{
+        return ''
+      }
+    },
+      ans(){
+        if(this.$route.params.id==1){
+          return false
+        }
+        else{
+          return true
+        }
+        
+      }
+    }
+}
+</script>
+
 
 <style scoped>
 .experience{
@@ -48,5 +76,15 @@
 .btn{
     margin-top:30px;
     
+}
+
+
+.custom-black-btn::before {
+    color: transparent;
+}
+
+
+.custom-black-btn:hover {
+    color:black;
 }
 </style>

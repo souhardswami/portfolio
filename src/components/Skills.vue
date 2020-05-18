@@ -14,6 +14,8 @@
                 fab
                 
                 outlined
+                :class="add2"
+        :ripple="ans"
         class="btn">
               <v-icon>mdi-plus</v-icon>
         </v-btn>
@@ -52,6 +54,26 @@ export default {
         return{
             skillset:['Python','Web Devlopment','CSS','Web Devlopment','Python','CSS','CSS','Web Devlopment','Python','Web Devlopment','Python','CSS','CSS','Web Devlopment','Python']
         }
+    },
+    computed:{
+      add2(){
+      
+      if(this.$route.params.id==1){
+          return 'custom-black-btn'
+      }
+      else{
+        return ''
+      }
+    },
+      ans(){
+        if(this.$route.params.id==1){
+          return false
+        }
+        else{
+          return true
+        }
+        
+      }
     }
 }
 </script>
@@ -74,6 +96,16 @@ export default {
 .skillelement{
     display: flex;
     flex-wrap: wrap;
+}
+
+
+.custom-black-btn::before {
+    color: transparent;
+}
+
+
+.custom-black-btn:hover {
+    color:black;
 }
 
 

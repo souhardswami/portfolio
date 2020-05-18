@@ -46,6 +46,9 @@
     outlined
   >
 
+
+
+
   <v-list-item-title class="headline mb-1 mx-8 my-4">Information</v-list-item-title>
         <v-btn 
         color="black"
@@ -57,6 +60,10 @@
                 
                 outlined
         class="btn"
+
+        
+        :class="add2"
+        :ripple="ans"
         
          >
               <v-icon>mdi-plus</v-icon>
@@ -95,9 +102,30 @@ export default {
                     {key:'PHONE',value1:'+91-9876543234'},
                     {key:'SOCIAL',value1:'github.com/kamalpratap'},
                     {key:'LINKS',value1:'codepen.io/kamal',value2:'yahool.io/kamal'}
-                ]
+                ],
+            
             
         }
+    },
+    computed:{
+      add2(){
+      
+      if(this.$route.params.id==1){
+          return 'custom-black-btn'
+      }
+      else{
+        return ''
+      }
+    },
+      ans(){
+        if(this.$route.params.id==1){
+          return false
+        }
+        else{
+          return true
+        }
+        
+      }
     }
 }
 </script>
@@ -115,5 +143,14 @@ export default {
 .content{
 
   margin-left:-600px;
+}
+
+.custom-black-btn::before {
+    color: transparent;
+}
+
+
+.custom-black-btn:hover {
+    color:black;
 }
 </style>
