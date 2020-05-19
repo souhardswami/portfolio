@@ -57,7 +57,7 @@ import EmptyContent from "@/components/EmptyContent.vue"
     computed:{
       
       ans(){
-        if(this.$route.params.id!=1){
+        if(this.$store.state.id!=1){
           return false
         }
         else{

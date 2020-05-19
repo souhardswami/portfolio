@@ -1,12 +1,12 @@
 <template>
     <div class="navbar">
+      
               <SideBar @closesidebar="close" :action="drawer"/>
               <nav>
                         
                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAAYklEQVRoge3ZsQ2AQAzFUAexAqMxOqwDG0ATSBT5TeBfXBEdSHoSwFEdkSGAqzoiw1IdkGXMkAD26ghJkiTpFwFs1REZvBC7cUg3Yx67JEmS9GrMR4+nbjdjhqzAWR0h6Xs3aFgFl74oro8AAAAASUVORK5CYII="  @click.stop="open">
                         
-                        <div id="link">EMPLOYEES/
-                          <span  class="text--disabled">PROFILES</span></div>
+                        <div id="link">EMPLOYEES/<span  class="text--disabled" @click="tog">PROFILES</span></div>
                         
                         <div id="back">
 
@@ -14,10 +14,7 @@
                           
                         </div>
                          
-              </nav>
-              
-            
-                
+              </nav>           
   </div>
 </template>
 
@@ -25,6 +22,7 @@
 <script>
 
 import SideBar from "@/components/SideBar.vue"
+
 export default {
     components:{
         SideBar
@@ -33,8 +31,11 @@ export default {
         drawer: false,
   }),
   methods:{
+    tog(){
+        this.$store.commit('setname')
+      },
     open(){
-      if(this.$route.params.id!=1){
+      if(this.$store.state.id!=1){
         this.drawer=true
       }
     },

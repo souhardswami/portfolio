@@ -47,7 +47,7 @@ export default {
   computed:{
       add2(){
       
-      if(this.$route.params.id==1){
+      if(this.$store.state.id==1){
           return 'custom-black-btn'
       }
       else{
@@ -55,7 +55,7 @@ export default {
       }
     },
       ans(){
-        if(this.$route.params.id==1){
+        if(this.$store.state.id==1){
           return false
         }
         else{
