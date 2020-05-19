@@ -36,9 +36,11 @@ export default {
 <style scoped>
 
 
+
 .education-skills{
     display: flex;
     justify-content: space-between;
+    
     
 }
 .left{

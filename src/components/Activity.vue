@@ -1,46 +1,8 @@
 <template>
     
-    <!-- <v-card class="mx-auto " outlined>
-    <v-list-item three-line>
-      <v-list-item-content>
-        <v-list-item-title class="headline mb-1 mx-4">Information</v-list-item-title>
-        <v-btn 
-        color="black"
-                x-small
-                absolute
-                top
-                right
-                fab
-                
-                outlined
-        class="btn"
-        
-         >
-              <v-icon>mdi-plus</v-icon>
-        </v-btn>
-        <br>
-
-        <div v-for="info in information" :key="info">
-            <v-list-item >
-              <v-list-item-action class="title">
-                {{info.key}}
-              </v-list-item-action>
-              <v-list-item-content>
-                <v-list-item-title>{{info.value}}</v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-            <v-divider v-if="info.key!='LINKS'"/>
-        </div>
-        
-      </v-list-item-content>
-
-      
-    </v-list-item>
-
-  </v-card> -->
-
+    
   <v-card
-    class="mx-auto"
+    class="mx-auto activity"
     
     tile
     outlined
@@ -153,4 +115,14 @@ export default {
 .custom-black-btn:hover {
     color:black;
 }
+
+
+
+.activity{
+  
+    height: 40vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
 </style>
