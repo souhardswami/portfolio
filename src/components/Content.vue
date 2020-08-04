@@ -1,42 +1,38 @@
 <template>
     <div class="content">
-        <div id="left">
 
-            <LeftDiv/>
-        </div>
-        <div id="right">
-           <RightDiv/>
-        </div>
+            <LandingPage/>
+            <div id="main">
+                <LeftDiv/>
+            </div>
+
+        
+        
 
     </div>
 </template>
 
 <script>
 import LeftDiv from "@/components/LeftDiv.vue"
-import RightDiv from "@/components/RightDiv.vue"
+import LandingPage from "@/components/LandingPage.vue"
 export default {
 
     components:{
         LeftDiv,
-        RightDiv
+        LandingPage
     }
     
 }
 </script>
 
 <style scoped>
-.content{
-  margin:0 100px;
-  display: flex;
-  justify-content: space-between;
+#main{
+    width:70%;
+    margin: 0 auto;
 }
-
-#left{
-    flex-basis: 58%;
-    /* background-color: red; */
-}
-#right{
-    flex-basis: 39%;
-    /* background-color: red; */
+@media only screen and (max-width: 768px) {
+  #main{
+    width: 100%;
+  }
 }
 </style>

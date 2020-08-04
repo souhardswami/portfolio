@@ -4,35 +4,23 @@
     <v-list-item three-line>
       <v-list-item-content>
         <v-list-item-title class="headline mb-1">Skills</v-list-item-title>
-        <v-btn 
         
-        color="black"
-                x-small
-                absolute
-                top
-                right
-                fab
-                
-                outlined
-                :class="add2"
-        :ripple="ans"
-        class="btn">
-              <v-icon>mdi-plus</v-icon>
-        </v-btn>
-        <br>
 
         <v-list-item-title class="skillelement my-2">
-            <div v-for="skill in skillset" :key="skill">
-                <v-chip
-                    class="ma-2 chip"
-                    color="blue lighten-5"
-                    text-color="black"
-                    
-                    >
-                    {{skill}}
-                    
-                    </v-chip>
-            </div>
+          <v-list-item-title class="headline mb-1 my-2 mx-4"><h6>Languages and Frameworks</h6></v-list-item-title>
+                <v-chip class="ma-2 chip" color="blue lighten-5" text-color="black">Python</v-chip>
+                <v-chip class="ma-2 chip" color="blue lighten-5" text-color="black">JavaScript(ES6+)</v-chip>
+                <v-chip class="ma-2 chip" color="blue lighten-5" text-color="black">Django</v-chip>
+                <v-chip class="ma-2 chip" color="blue lighten-5" text-color="black">Vue.js</v-chip>
+        
+          <v-list-item-title class="headline mb-1 my-2 mx-4"><h6>DataBase</h6></v-list-item-title>
+                <v-chip class="ma-2 chip" color="blue lighten-5" text-color="black">SQL-query</v-chip>
+                <v-chip class="ma-2 chip" color="blue lighten-5" text-color="black">ORM</v-chip>
+                <v-chip class="ma-2 chip" color="blue lighten-5" text-color="black">SQLITE</v-chip>
+          <v-list-item-title class="headline mb-1 my-2 mx-4"><h6>Other Tools</h6></v-list-item-title>
+                <v-chip class="ma-2 chip" color="blue lighten-5" text-color="black">Selenium</v-chip>
+                <v-chip class="ma-2 chip" color="blue lighten-5" text-color="black">Rest-api</v-chip>
+                <v-chip class="ma-2 chip" color="blue lighten-5" text-color="black">Html/css</v-chip>
         </v-list-item-title>
 
         
@@ -48,44 +36,11 @@
 </template>
 
 
-<script>
-export default {
-    data(){
-        return{
-            skillset:['Python','Web Devlopment','CSS','Web Devlopment','Python','CSS','CSS','Web Devlopment','Python','Web Devlopment','Python','CSS','CSS','Web Devlopment','Python']
-        }
-    },
-    computed:{
-      add2(){
-      
-      if(this.$route.params.id==1){
-          return 'custom-black-btn'
-      }
-      else{
-        return ''
-      }
-    },
-      ans(){
-        if(this.$route.params.id==1){
-          return false
-        }
-        else{
-          return true
-        }
-        
-      }
-    }
-}
-</script>
-
 
 <style scoped>
 
 
-.btn{
-    margin-top:30px;
-    
-}
+
 
 .skills{
     /* flex-basis: 48%; */
@@ -98,15 +53,6 @@ export default {
     flex-wrap: wrap;
 }
 
-
-.custom-black-btn::before {
-    color: transparent;
-}
-
-
-.custom-black-btn:hover {
-    color:black;
-}
 
 
 
