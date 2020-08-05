@@ -28,7 +28,7 @@ export default {
         ProfileTab,
         Project,
         Education,
-        Skills
+        Skills,
     }
 }
 </script>

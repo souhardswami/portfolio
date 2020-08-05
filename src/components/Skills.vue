@@ -20,7 +20,7 @@
           <v-list-item-title class="headline mb-1 my-2 mx-4"><h6>Other Tools</h6></v-list-item-title>
                 <v-chip class="ma-2 chip" color="blue lighten-5" text-color="black">Selenium</v-chip>
                 <v-chip class="ma-2 chip" color="blue lighten-5" text-color="black">Rest-api</v-chip>
-                <v-chip class="ma-2 chip" color="blue lighten-5" text-color="black">Html/css</v-chip>
+                <v-chip class="ma-2 chip" color="blue lighten-5" text-color="black">HTML/CSS</v-chip>
         </v-list-item-title>
 
         

@@ -5,6 +5,8 @@
             <div id="main">
                 <LeftDiv/>
             </div>
+            <Footer/>
+
 
         
         
@@ -15,11 +17,15 @@
 <script>
 import LeftDiv from "@/components/LeftDiv.vue"
 import LandingPage from "@/components/LandingPage.vue"
+import Footer from "@/components/Footer.vue"
+
 export default {
 
     components:{
+        LandingPage,
         LeftDiv,
-        LandingPage
+        Footer
+
     }
     
 }
