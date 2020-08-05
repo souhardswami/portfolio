@@ -2,7 +2,7 @@
     <div class="leftdiv">
         <ProfileCard/>
         <ProfileTab/>
-        <Experience />
+        <Project />
         <div class="education-skills">
             <div class="left">
                 <Education/>
@@ -17,7 +17,7 @@
 <script>
 import ProfileCard from "@/components/ProfileCard.vue"
 import ProfileTab from "@/components/ProfileTab.vue"
-import Experience from "@/components/Experience.vue"
+import Project from "@/components/Project.vue"
 import Education from "@/components/Education.vue"
 import Skills from "@/components/Skills.vue"
 
@@ -26,9 +26,9 @@ export default {
     components:{
         ProfileCard,
         ProfileTab,
-        Experience,
+        Project,
         Education,
-        Skills
+        Skills,
     }
 }
 </script>
@@ -52,6 +52,11 @@ export default {
     flex-basis: 49%;
     
     
+}
+@media only screen and (max-width: 768px) {
+  .education-skills{
+    display: block;
+  }
 }
 </style>
 

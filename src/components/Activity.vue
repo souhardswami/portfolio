@@ -1,6 +1,4 @@
 <template>
-    
-    
   <v-card
     class="mx-auto activity"
     
@@ -11,26 +9,7 @@
 
 
   <v-list-item-title class="headline mb-1 mx-8 my-4">Information</v-list-item-title>
-        <v-btn 
-        color="black"
-                x-small
-                absolute
-                top
-                right
-                fab
-                
-                outlined
-        class="btn"
 
-        
-        :class="add2"
-        :ripple="ans"
-        @click="tog"
-        
-         >
-              <v-icon>mdi-plus</v-icon>
-        </v-btn>
-        <br>
     <v-list flat>
       
       <div v-for="item in information" :key="item.key">
@@ -40,8 +19,8 @@
             <v-list-item-title color="black">{{item.key}}</v-list-item-title>
           </v-list-item-content>
           <v-list-item-content class="content">
-            <v-list-item-title color="black">{{item.value1}}</v-list-item-title>
-            <v-list-item-title  v-if="item.value2!=null" color="black">{{item.value2}}</v-list-item-title>
+            <v-list-item-title color="black"><a :href="'https://'+item.value1" target="_blank">{{item.value1}}</a></v-list-item-title>
+            <v-list-item-title  v-if="item.value2!=null" color="black"><a :href="'https://'+item.value2" target="_blank">{{item.value2}}</a></v-list-item-title>
           </v-list-item-content>
         
         </v-list-item>
@@ -60,42 +39,26 @@ export default {
         return {
             information:
                 [
-                    {key:'EMAIL',value1:'Kamalpratap@xyz.com'},
-                    {key:'PHONE',value1:'+91-9876543234'},
-                    {key:'SOCIAL',value1:'github.com/kamalpratap'},
-                    {key:'LINKS',value1:'codepen.io/kamal',value2:'yahool.com/kamal'}
+                    {key:'EMAIL',value1:'souhardswami987@gmail.com'},
+                    {key:'PHONE',value1:'+91-9024802169',value2:'+91-9829579629'},
+                    {key:'Github',value1:'github.com/souhardswami'},
+                    {key:'Profile',value1:'codechef.com/users/souhard987',value2:'hackerrank.com/souhardswami987'},
+                    {key:'Linkedin',value1:'linkedin.com/in/souhard-swami-9a2b651a2'}
                 ],
             
             
         }
-    },
-    computed:{
-      add2(){
-      
-      if(this.$store.state.id==1){
-          return 'custom-black-btn'
-      }
-      else{
-        return ''
-      }
-    },
-      ans(){
-        if(this.$store.state.id==1){
-          return false
-        }
-        else{
-          return true
-        }
-        
-      }
     }
+    
 }
 </script>
 
 
 <style scoped>
 
-
+a{
+  text-decoration: none;
+}
 .btn{
     margin-top:30px;
     

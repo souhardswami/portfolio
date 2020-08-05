@@ -1,7 +1,6 @@
 <template>
   <v-app>
     <v-content>
-      <NavBar />
       <Home/>
       
       
@@ -13,11 +12,9 @@
 </template>
 
 <script>
-import NavBar from "@/components/NavBar.vue"
 import Home from "@/views/Home.vue"
 export default {
   components:{
-    NavBar,
     Home
   },
 }
