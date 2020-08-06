@@ -1,4 +1,12 @@
-# portfolio
+<h1 align="center">Portfolio</h1>
+
+Webpage Teck 
+
+- Vue.js
+- Vuetify
+
+
+<hr>
 
 ## Project setup
 ```
@@ -10,6 +18,7 @@ npm install
 npm run serve
 ```
 
+
 ### Compiles and minifies for production
 ```
 npm run build
@@ -20,5 +29,11 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Reference
+See (https://cli.vuejs.org/config/)
+
+See  (https://vuetifyjs.com/en/)
+
+See (https://vuejs.org/)
+
+
