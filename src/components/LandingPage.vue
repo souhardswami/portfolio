@@ -1,7 +1,7 @@
 <template>
     <div class="landingpage">
     <img src="@/assets/cover.png">
-
+    
     </div>
 </template>
 

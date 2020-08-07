@@ -28,6 +28,7 @@
                 <img src="https://img.icons8.com/nolan/38/twitter.png"/>
             </a>
         </v-btn>
+        <h6> Portfolio Souhardswami(2020)</h6>
         
         
        
@@ -36,3 +37,11 @@
     </v-card>
   </v-footer>
 </template>
+
+<style scoped>
+h6{
+  width: 80%;
+  text-align: center;
+
+}
+</style>

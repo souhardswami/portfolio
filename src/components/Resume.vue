@@ -3,17 +3,19 @@
     <v-list-item three-line>
       <v-list-item-content>
                     <div class="resume">
-                        <a href="@/assets/souhard_swami.pdf" download>
-                            <v-btn class="uploadbtn" color="blue" dark flat>
-                                <v-icon dark>mdi-cloud-upload</v-icon>
+                         <v-btn class="uploadbtn" color="blue" dark flat>
+                                <v-icon  dark>mdi-cloud-upload</v-icon>
                             </v-btn>
-                        </a>
+                        
+                        
+
                         
                     </div>
                 </v-list-item-content>
             </v-list-item>
         </v-card>
 </template>
+
 
 <style scoped>
 .resume{

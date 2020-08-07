@@ -10,7 +10,7 @@
                 <span>Information</span>
             </v-tab>
             
-            <v-tab href="#mobile-tabs-5-3" >
+            <v-tab href="#mobile-tabs-5-3" disabled>
                 <span>RESUME</span>
             </v-tab>
         </v-tabs>
@@ -50,7 +50,7 @@ import Resume from "@/components/Resume.vue"
     },
     data () {
       return {
-        tabs: 'mobile-tabs-5-2',
+        tabs: 'mobile-tabs-5-1',
         }
     }
   }

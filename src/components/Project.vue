@@ -46,7 +46,7 @@
           <div class="discription">
               <ul>
                 <li>24 hr hackathon,hackIIITV</li>
-                <li>Developed A machine Learning chatserverfor communication between the specially abled</li>
+                <li>Developed A machine Learning chatserver for communication between the specially abled</li>
                 <li>I did full stack Developement to serve a machine learning model to frontend</li>
                 <li>Tech stack :-Django,web</li></ul>
           </div>
