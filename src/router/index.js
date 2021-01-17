@@ -4,6 +4,7 @@ import VueRouter from "vue-router";
 import Project from "@/components/Project.vue";
 import Content from "@/components/Content.vue";
 import Skills from "@/components/Skills.vue";
+import AboutMe from "@/components/AboutMe.vue";
 
 Vue.use(VueRouter);
 
@@ -22,6 +23,11 @@ const routes = [
     path: "/skills",
     name: "Skills",
     component: Skills
+  },
+  {
+    path: "/about",
+    name: "AboutMe",
+    component: AboutMe
   }
 ];
 
