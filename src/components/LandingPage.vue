@@ -1,15 +1,33 @@
 <template>
     <div class="landingpage">
-    <img src="@/assets/cover.png">
-    
-    </div>
+
+
+
+        <section class="text-gray-400 bg-gray-900 body-font">
+                <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
+                            <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
+                                <h1 class="title-font font-medium text-3xl text-white">SOUHARD SWAMI<br> SWE</h1>
+                                <p class="leading-relaxed mt-4">Hey, I am Souhard, a third-year Computer Science undergraduate Student at IIIT Vadodara.</p>
+                            </div>
+                <div class="lg:w-2/6 md:w-1/2 bg-gray-800 bg-opacity-50 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+                
+                
+                            <img id="img" alt="ecommerce" class="rounded" src="https://media-exp1.licdn.com/dms/image/C5603AQEkJ2ZWZw6Q5A/profile-displayphoto-shrink_400_400/0/1593956775970?e=1616630400&v=beta&t=hsbTRWfCGRpBISxz0SmfR_EpPbKBgbHORGVFhDk57S0">
+                
+                </div>
+            </div>
+        </section>
+     </div>
 </template>
 
 <style scoped>
 
-.landingpage img{
-    width: 100%;
-    height: 70vh;
+#img{
+    /* width: 20%;
+    height: 20%; */
+    /* border-radius: 50%; */
+    
+    
 }
 
 </style>

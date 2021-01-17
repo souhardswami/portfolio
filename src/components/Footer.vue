@@ -39,9 +39,9 @@
 </template>
 
 <style scoped>
-h6{
+/* h6{
   width: 80%;
   text-align: center;
 
-}
+} */
 </style>

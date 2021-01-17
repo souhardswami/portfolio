@@ -1,11 +1,14 @@
 <template>
     <div class="content">
 
+       
+            <NavBar/>
             <LandingPage/>
-            <div id="main">
+       
+            <!-- <div id="main">
                 <LeftDiv/>
             </div>
-            <Footer/>
+            <Footer/> -->
 
 
         
@@ -15,30 +18,22 @@
 </template>
 
 <script>
-import LeftDiv from "@/components/LeftDiv.vue"
+// import LeftDiv from "@/components/LeftDiv.vue"
+
+import NavBar from "@/components/NavBar.vue"
 import LandingPage from "@/components/LandingPage.vue"
-import Footer from "@/components/Footer.vue"
+// import Footer from "@/components/Footer.vue"
 
 export default {
 
     components:{
-        LandingPage,
-        LeftDiv,
-        Footer
+        NavBar,
+        LandingPage
+        // LeftDiv,
+        // Footer
 
     }
     
 }
 </script>
 
-<style scoped>
-#main{
-    width:70%;
-    margin: 0 auto;
-}
-@media only screen and (max-width: 768px) {
-  #main{
-    width: 100%;
-  }
-}
-</style>

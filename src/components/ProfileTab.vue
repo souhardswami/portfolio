@@ -38,21 +38,21 @@
   </v-card>
 </template>
 
-<script>
-import Activity from "@/components/Activity.vue"
-import AboutMe from "@/components/AboutMe.vue"
-import Resume from "@/components/Resume.vue"
-  export default {
-    components:{
-        Activity,
-        AboutMe,
-        Resume
-    },
-    data () {
-      return {
-        tabs: 'mobile-tabs-5-1',
-        }
-    }
-  }
-</script>
+// <script>
+// import Activity from "@/components/Activity.vue"
+// import AboutMe from "@/components/AboutMe.vue"
+// import Resume from "@/components/Resume.vue"
+//   export default {
+//     components:{
+//         Activity,
+//         AboutMe,
+//         Resume
+//     },
+//     data () {
+//       return {
+//         tabs: 'mobile-tabs-5-1',
+//         }
+//     }
+//   }
+// </script>
 

@@ -55,7 +55,7 @@ export default {
 
 
 <style scoped>
-
+/* 
 a{
   text-decoration: none;
 }
@@ -86,6 +86,6 @@ a{
     height: 40vh;
     overflow-x: hidden;
     overflow-y: scroll;
-}
+} */
 
 </style>

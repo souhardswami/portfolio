@@ -18,11 +18,11 @@
 
 
 <style scoped>
-.resume{
+/* .resume{
     height: 221px;
     margin-top: 100px;
 }
 .uploadbtn{
     margin:0 50%;
-}
+} */
 </style>

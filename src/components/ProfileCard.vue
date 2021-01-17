@@ -10,7 +10,7 @@
 </template>
 
 <style scoped>
-
+/* 
 .profilecard  {
                 margin: 30px 0 0 18px;
                 height: 150px;
@@ -51,7 +51,7 @@
 
   }
 }
-
+ */
 
 
 

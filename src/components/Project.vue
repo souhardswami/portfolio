@@ -63,12 +63,12 @@
 
 
 <style scoped>
-.discription{
+/* .discription{
   margin-left: 10%;
 }
 @media only screen and (max-width: 768px) {
   .discription{
     margin-left:2%;
   }
-}
+} */
 </style>

@@ -24,11 +24,11 @@
 
 <style scoped>
 
-
+/* 
 .about{
     height: 221px;
     margin-top: 100px;
     text-align: center;
 
-}
+} */
 </style>

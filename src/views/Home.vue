@@ -2,9 +2,6 @@
   <div class="home">
     
     <Content />
-
-
-    
   </div>
 </template>
 
@@ -21,15 +18,22 @@ export default {
 
 <style scoped>
 
-.home{
-    height:100vh;
 
-   overflow-y: scroll;
-   overflow-x: hidden;
+
+.home{
+  background-color:#1A202C;
+  height: 100%;
+  width: 100%;
+  } 
+
+.home{
+  
+  height:100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
     
     
 }
-
 
 .home::-webkit-scrollbar-track
 {
@@ -41,7 +45,8 @@ export default {
 .home::-webkit-scrollbar
 {
 	width: 12px;
-	background-color: #F5F5F5;
+	 background-color: #F5F5F5; 
+	background-color: black;
 }
 
 .home::-webkit-scrollbar-thumb
@@ -51,18 +56,6 @@ export default {
 	background-color: #555;
 }
 
-/* .home::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-.home::-webkit-scrollbar-track {
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 10px;
-}
-.home::-webkit-scrollbar-thumb {
-  background-color: #AD7D52;
-  border-radius: 10px;
-} */
 </style>
 
 

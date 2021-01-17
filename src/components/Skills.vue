@@ -42,8 +42,8 @@
 
 
 
-.skills{
-    /* flex-basis: 48%; */
+/* .skills{
+    flex-basis: 48%;
     margin-top:20px;
 
     
@@ -51,7 +51,7 @@
 .skillelement{
     display: flex;
     flex-wrap: wrap;
-}
+} */
 
 
 

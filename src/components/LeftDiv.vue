@@ -35,7 +35,7 @@ export default {
 
 <style scoped>
 
-
+/* 
 
 .education-skills{
     display: flex;
@@ -57,6 +57,6 @@ export default {
   .education-skills{
     display: block;
   }
-}
+} */
 </style>
 
