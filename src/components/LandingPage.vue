@@ -20,11 +20,11 @@
 <style scoped>
 
 
-.landingpage{
-  /* margin-top:40px; */
+/* .landingpage{
   margin-left: 230px;
   margin-right: 230px;
-}
+} */
+
 #img{
     /* width: 20%;
     height: 20%; */

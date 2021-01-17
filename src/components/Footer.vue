@@ -33,9 +33,9 @@
 </template>
 
 <style scoped>
-.footer{
+/* .footer{
   margin-left: 230px;
   margin-right: 230px;
-}
+} */
 
 </style>

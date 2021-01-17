@@ -1,6 +1,6 @@
 <template>
     <div class="content">
-            <NavBar/>
+            <!-- <NavBar/> -->
             <LandingPage/>
             <LookingJob/>
             <Footer/>
@@ -9,7 +9,7 @@
 
 <script>
 
-import NavBar from "@/components/NavBar.vue"
+// import NavBar from "@/components/NavBar.vue"
 import LandingPage from "@/components/LandingPage.vue"
 import Footer from "@/components/Footer.vue"
 import LookingJob from "@/components/LookingJob.vue"
@@ -17,7 +17,7 @@ import LookingJob from "@/components/LookingJob.vue"
 export default {
 
     components:{
-        NavBar,
+        // NavBar,
         LandingPage,
         LookingJob,
         Footer

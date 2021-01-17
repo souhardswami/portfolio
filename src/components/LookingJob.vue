@@ -27,8 +27,8 @@
 <style scoped>
 
 .lookingjob{
-    margin-left: 260px;
-    margin-right: 230px;
+    margin-left: 30px;
+
 }
 #img{
     max-width:20%;

@@ -1,17 +1,22 @@
 <template>
   <div class="home">
     
-    <Content />
+    <!-- <Content /> -->
+    <NavBar/>
+    
   </div>
 </template>
 
 
 <script>
-import Content from "@/components/Content.vue"
+// import Content from "@/components/Content.vue"
+import NavBar from "@/components/NavBar.vue"
 export default {
   
   components:{
-    Content
+    // Content
+    NavBar
+
   }
 }
 </script>

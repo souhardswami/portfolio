@@ -1,74 +1,42 @@
 <template>
   <div class="project">
-    <section class="tout" id="interests">
-      <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1>PROJECT</h1></div>
-        </div>
-      <div class="row">
-         
-        <div class="col-sm-12">
-          <h2 ><a href="https://github.com/souhardswami/instapro-frontend" target="_blank">InstaPro</a></h2>
-          <div class="discription">
-              <ul>
-                <li>Developed A social media app</li>
-                <li>Very simmilar feature like instagram</li>
-                <li>UserAuthentication,Photo-upload, Searching(user,tag),Editing profile,LIke,comment,follow</li>
-                <li>Tech stack :-Vue.js,Django-rest,Sqlite-database,ORM,HTML,CSS</li></ul>
-          </div>
-        </div>
-        <div class="col-sm-12">
-          <h2 ><a href="https://github.com/souhardswami/chatApp" target="_blank">chatApp</a></h2>
-          <div class="discription">
-              <ul>
-                <li>Developed A Chatting  app</li>
-                <li>A django channel based chatting app between two person</li>
-                <li>Tokenbased-communication,Status Update</li>
-                <li>Tech stack :-Django-channel,socket programming,ORM,webbasics</li></ul>
-          </div>
-        </div>
-
-        <div class="col-sm-12">
-          <h2 ><a href="https://github.com/souhardswami/fast_code" target="_blank">fast_code</a></h2>
-          <div class="discription">
-              <ul>
-                <li>Developed A coding plateform like app</li>
-                <li>A place where you can code your logic and run your code</li>
-                <li>Third-party-api,codeEditor-design,css animation</li>
-                <li>Tech stack :-Django,Api-uses,ORM,frontend</li></ul>
-          </div>
-        </div>
-
-
-        <div class="col-sm-12">
-          <h2 ><a href="https://github.com/BakaOtaku/Actum" target="_blank">Actum</a></h2>
-          <div class="discription">
-              <ul>
-                <li>24 hr hackathon,hackIIITV</li>
-                <li>Developed A machine Learning chatserver for communication between the specially abled</li>
-                <li>I did full stack Developement to serve a machine learning model to frontend</li>
-                <li>Tech stack :-Django,web</li></ul>
-          </div>
-        </div>
-        
-    </div>
-  </div>
-</section>
-  </div>
-    
     
 
+
+
+      <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="flex flex-col text-center w-full mb-12 py-24">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">MY PROJECT</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Currently, I am working on promise based payment project. In the payment project promise is key of payment system.</p>
+          </div>
+
+
+        <div class=" container   mx-auto ">
+
+          <div class="flex items-center justify-center -mx-4 -mb-10 flex-col ">
+            <div class="sm:w-1/2 mb-10 border-2 rounded-lg border-gray-800 p-5 ">
+              
+              <h2 class="title-font text-2xl  font-medium text-white mt-6 mb-3">InstaPro</h2>
+              <p class="leading-relaxed text-base">Very simmilar feature of instagram, ex. UserAuthentication, Photo-upload, Searching(user,tag), Edit profile, Like, comment, follow</p>
+              <button class="mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-600 rounded"><a href="https://github.com/souhardswami/instapro-frontend">Github</a></button>
+            </div>
+
+            <div class="sm:w-1/2 mb-10 border-2 rounded-lg border-gray-800 p-5 ">
+              
+              <h2 class="title-font text-2xl font-medium text-white mt-6 mb-3">chatApp</h2>
+              <p class="leading-relaxed text-base">A django channel based chatting app between two person. Tokenbased-communication,Status Update</p>
+              <button class="mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-600 rounded"><a href="https://github.com/souhardswami/chatApp">Github</a></button>
+            </div>
+            <div class="sm:w-1/2 mb-10 border-2 rounded-lg border-gray-800 p-5 ">
+              
+              <h2 class="title-font text-2xl font-medium text-white mt-6 mb-3">fast_code</h2>
+              <p class="leading-relaxed text-base">Developed A coding plateform like app. A place where you can code your logic and run your code</p>
+              <button class="mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-600 rounded"><a href="https://github.com/souhardswami/fast_code">Github</a></button>
+            </div>
+          </div>
+        </div>
+            
+      </section>
+
+  </div>
 </template>
-
-
-<style scoped>
-/* .discription{
-  margin-left: 10%;
-}
-@media only screen and (max-width: 768px) {
-  .discription{
-    margin-left:2%;
-  }
-} */
-</style>
