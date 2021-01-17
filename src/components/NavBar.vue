@@ -9,7 +9,7 @@
                   <nav class="md:ml-auto  flex flex-wrap items-center text-base justify-center">
                     <router-link  to="/" class="mr-5 hover:text-purple-500">Home</router-link>
                     <router-link  to="/project" class="mr-5 hover:text-purple-500">Project</router-link>
-                    <router-link  to="/project" class="mr-5 hover:text-purple-500">Project</router-link>
+                    <router-link  to="/skills" class="mr-5 hover:text-purple-500">Skills</router-link>
                     <router-link  to="/project" class="mr-5 hover:text-purple-500">Project</router-link>
                     
                     
