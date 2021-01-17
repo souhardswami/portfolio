@@ -1,15 +1,11 @@
 <template>
     <div class="landingpage">
-
-
-
         <section class="text-gray-400 bg-gray-900 body-font">
-                <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
+                <div class="container px-5 py-20 mx-auto flex flex-wrap items-center">
                             <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
                                 <h1 class="title-font font-medium text-3xl text-white">Souhard Swami<br><span class="text-2xl text-purple-500"> SWE/ STUDENT</span></h1>
                                 <div class="w-13 h-1 bg-purple-500 rounded mt-2 mb-4"></div>
-                                
-                                <p class="leading-relaxed mt-4"><span id="hand"> 👋 </span> Hey, I am Souhard, a third-year Computer Science undergraduate Student at IIIT Vadodara.</p>
+                                <p class="leading-relaxed mt-4"><span id="hand"> 👋 </span> Hey, I am Souhard, a third-year Computer Science undergraduate Student @ IIIT Vadodara.</p>
                             </div>
                 <div class="lg:w-2/6 md:w-1/2 bg-gray-800 bg-opacity-50 rounded-full p-10 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
 
@@ -25,7 +21,7 @@
 
 
 .landingpage{
-  margin-top:40px;
+  /* margin-top:40px; */
   margin-left: 230px;
   margin-right: 230px;
 }
