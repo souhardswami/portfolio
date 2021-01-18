@@ -8,7 +8,7 @@ export default new Vuex.Store({
       color:"dark",
       color_bg: "dark-bg",
       color_text: "dark-text",
-      color_text_sec:"dark-btn-sec",
+      color_text_sec:"dark-text-sec",
       color_button:"dark-btn"
 
 
