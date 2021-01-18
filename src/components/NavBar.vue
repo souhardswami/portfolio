@@ -7,18 +7,19 @@
                     <span class="ml-3 text-xl">Souhard-Swami</span>
                   </a>
                   <nav class="md:ml-auto  flex flex-wrap items-center text-base justify-center">
-                    <router-link  to="/" class="mr-5 hover:text-purple-500">Home</router-link>
-                    <router-link  to="/project" class="mr-5 hover:text-purple-500">Project</router-link>
-                    <router-link  to="/skills" class="mr-5 hover:text-purple-500">Skills</router-link>
-                    <router-link  to="/about" class="mr-5 hover:text-purple-500">About</router-link>
+                    <router-link  to="/" class="mr-5   routerlinks">Home</router-link>
+                    <router-link  to="/project" class="mr-5  routerlinks">Project</router-link>
+                    <router-link  to="/skills" class="mr-5  routerlinks">Skills</router-link>
+                    <router-link  to="/about" class="mr-5  routerlinks">About</router-link>
                     
                     
                   </nav>
-                  <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Light
-                    <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                      <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg> -->
-                  </button>
+
+
+                  <!-- theme change -->
+                  <!-- <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0" >Light
+                    
+                  </button> -->
                 </div>
           </header>
       <router-view/> 
@@ -41,5 +42,9 @@
   border-color: #1A202C;
 
 } 
+.routerlinks:hover{
+  
+  border-bottom: 3px #9f7aea solid;
+}
 
 </style>

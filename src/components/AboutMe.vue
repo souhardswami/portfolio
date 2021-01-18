@@ -11,7 +11,7 @@
                 <p class="leading-relaxed text-lg">Hi!, I'm souhard swami a third-year student at IIIT Vadodara doing Computer Science and Engineering. I'm a passionate about  Full-stack Development So that I can build any scaling web applications with help of various Technologies. I Love to problem-Solving  and Mathematics.</p>
                 <span class="inline-block h-1 w-10 rounded bg-purple-500 mt-8 mb-6"></span>
                 <h2 class="text-white font-medium title-font tracking-wider text-sm">SOUHARD SWAMI</h2>
-                <p class="text-gray-500">Incoming SWE</p>
+                <p class="text-gray-500">Student @IIITV</p>
               </div>
             </div>
           </section>
