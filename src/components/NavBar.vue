@@ -1,8 +1,8 @@
 <template>
     <div class="navbar">
-            <header class="text-gray-400 bg-gray-900 body-font">
+            <header class=" body-font" :class="both">
                 <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-                  <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+                  <a class="flex title-font font-medium items-center  mb-4 md:mb-0" :class="$store.state.color_text">
                     <img src="https://avatars0.githubusercontent.com/u/48220329?s=400&u=bdafcf2b71f19742f3e66167925d8c6796ef4b2c&v=4" id="img"/>
                     <span class="ml-3 text-xl">Souhard-Swami</span>
                   </a>
@@ -11,21 +11,35 @@
                     <router-link  to="/project" class="mr-5  routerlinks">Project</router-link>
                     <router-link  to="/skills" class="mr-5  routerlinks">Skills</router-link>
                     <router-link  to="/about" class="mr-5  routerlinks">About</router-link>
-                    
+                    <ThemeChange/>
                     
                   </nav>
-
-
-                  <!-- theme change -->
-                  <!-- <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0" >Light
-                    
-                  </button> -->
                 </div>
           </header>
       <router-view/> 
 
     </div>
 </template>
+
+<script>
+
+import ThemeChange from "@/components/ThemeChange.vue"
+
+export default {
+    components:{
+        ThemeChange
+    },
+    
+    computed:{
+      both(){
+        return this.$store.state.color_bg+" "+ this.$store.state.color_text
+      },
+    }
+
+    
+}
+</script>
+
 
 <style scoped>
 

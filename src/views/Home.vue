@@ -1,22 +1,24 @@
 <template>
-  <div class="home">
+  <div :class="both" class="home">
     
-    <!-- <Content /> -->
-    <NavBar/>
-    <Footer/>
+        <NavBar/>
+        <Footer/>
     
   </div>
 </template>
 
 
 <script>
-// import Content from "@/components/Content.vue"
+
 import NavBar from "@/components/NavBar.vue"
 import Footer from "@/components/Footer.vue"
 export default {
-  
+    computed:{
+      both(){
+        return this.$store.state.color_bg+" "+ this.$store.state.color_text
+      }
+    },
   components:{
-    // Content
     NavBar,
     Footer
 
@@ -24,22 +26,58 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 
 
+.dark-btn{
+  background-color: #1F2937;
+}
+
+.dark-bg{
+
+  background-color: #1A202C;
+ 
+}
+.dark-text{
+  color: #9CA3AF;
+
+}
+.dark-text-sec{
+  color: white;
+
+}
+
+.light-btn{
+  
+  background-color: #F3F4F6;
+
+}
+.light-bg{
+  
+  background-color: white;
+
+}
+.light-text{
+  
+  color: #1A202C;
+
+}
+.light-text-sec{
+  
+  color: #4B5563;
+
+}
 
 .home{
-  background-color:#1A202C;
+
   height: 100%;
   width: 100%;
   } 
 
 .home{
-  
   height:100vh;
   overflow-y: scroll;
   overflow-x: hidden;
-    
     
 }
 

@@ -2,7 +2,7 @@
 
         <div class="aboutme">
           
-          <section class="text-gray-400 bg-gray-900 body-font">
+          <section class="body-font" :class="both">
             <div class="container px-5 py-24 mx-auto">
               <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-500 mb-8" viewBox="0 0 975.036 975.036">
@@ -10,8 +10,8 @@
                 </svg>
                 <p class="leading-relaxed text-lg">Hi!, I'm souhard swami a third-year student at IIIT Vadodara doing Computer Science and Engineering. I'm a passionate about  Full-stack Development So that I can build any scaling web applications with help of various Technologies. I Love to problem-Solving  and Mathematics.</p>
                 <span class="inline-block h-1 w-10 rounded bg-purple-500 mt-8 mb-6"></span>
-                <h2 class="text-white font-medium title-font tracking-wider text-sm">SOUHARD SWAMI</h2>
-                <p class="text-gray-500">Student @IIITV</p>
+                <h2 :class="$store.state.color_text_sec" class=" font-medium title-font tracking-wider text-sm">SOUHARD SWAMI</h2>
+                <p :class="$store.state.color_text">Student @IIITV</p>
               </div>
             </div>
           </section>
@@ -19,3 +19,15 @@
         </div>
 
 </template>
+
+
+
+<script>
+export default {
+    computed:{
+      both(){
+        return this.$store.state.color_bg+" "+ this.$store.state.color_text
+      },
+    },
+}
+</script>

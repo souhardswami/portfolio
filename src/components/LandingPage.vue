@@ -1,13 +1,13 @@
 <template>
     <div class="landingpage">
-        <section class="text-gray-400 bg-gray-900 body-font">
+        <section class=" body-font" :class="both">
                 <div class="container px-5 py-20 mx-auto flex flex-wrap items-center">
                             <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
-                                <h1 class="title-font font-medium text-3xl text-white">Souhard Swami<br><span class="text-2xl text-purple-500"> SWE/ STUDENT</span></h1>
+                                <h1 class="title-font font-medium text-3xl" :class="$store.state.color_text_sec">Souhard Swami<br><span class="text-2xl text-purple-500"> SWE/ STUDENT</span></h1>
                                 <div class="w-13 h-1 bg-purple-500 rounded mt-2 mb-4"></div>
                                 <p class="leading-relaxed mt-4"><span id="hand"> 👋 </span> Hey, I am Souhard, a third-year Computer Science undergraduate Student @ IIIT Vadodara.</p>
                             </div>
-                <div class="lg:w-2/6 md:w-1/2 bg-gray-800 bg-opacity-50 rounded-full p-10 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+                <div :class="$store.state.color_button" class="lg:w-2/6 md:w-1/2  bg-opacity-50 rounded-full p-10 flex flex-col md:ml-auto w-full mt-10 md:mt-0" >
 
                             <img id="img" alt="ecommerce" class="rounded" src="https://media-exp1.licdn.com/dms/image/C5603AQEkJ2ZWZw6Q5A/profile-displayphoto-shrink_400_400/0/1593956775970?e=1616630400&v=beta&t=hsbTRWfCGRpBISxz0SmfR_EpPbKBgbHORGVFhDk57S0">
                 
@@ -17,13 +17,18 @@
      </div>
 </template>
 
+
+<script>
+export default {
+    computed:{
+      both(){
+        return this.$store.state.color_bg+" "+ this.$store.state.color_text
+      },
+    },
+}
+</script>
+
 <style scoped>
-
-
-/* .landingpage{
-  margin-left: 230px;
-  margin-right: 230px;
-} */
 
 #img{
     /* width: 20%;

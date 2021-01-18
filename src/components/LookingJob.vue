@@ -1,22 +1,22 @@
 <template>
     <div class="lookingjob">
 
-        <section class="text-gray-400 bg-gray-900 body-font">
+        <section class="body-font" :class="both">
             <div class="container px-5  mx-auto flex items-center md:flex-row flex-col">
                 <span class="pulse-animation"></span>
                     <div class="flex flex-col md:pr-10 md:mb-0 mb-6 pr-0 w-full md:w-auto md:text-left text-center">
                     <h2 class="text-xs text-purple-400 tracking-widest font-medium title-font mb-1">Software and Technical Related</h2>
-                    <h1 class="md:text-3xl text-2xl font-medium title-font text-white">Actively looking for Summer Intern 2021</h1>
+                    <h1 class="md:text-3xl text-2xl font-medium title-font " :class="$store.state.color_text_sec">Actively looking for Summer Intern 2021</h1>
                 </div>
                 
                 <div class="flex md:ml-auto md:mr-0 mx-auto items-center flex-shrink-0 space-x-4">
                 
                  <a href="https://drive.google.com/file/d/1EhyR4m6sGM2U5agK5CWbe0i2m-MsDiOE/view?usp=sharing" target="_blank">
-                    <button class="bg-gray-800 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-700 hover:bg-opacity-50 focus:outline-none">
+                    <button :class="$store.state.color_button" class="inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-700 hover:bg-opacity-50 focus:outline-none">
                         <img id="img" src="https://assets.dryicons.com/uploads/icon/svg/7895/3a762adf-69f8-446d-90b3-296d302fd4fc.svg"/>
                         <span class="ml-4 flex items-start flex-col leading-none">
-                        <span class="text-xs text-gray-500 mb-1">Resume/ CV</span>
-                        <span class="title-font font-medium">souhard.pdf</span>
+                        <span class="text-xs  mb-1">Resume/ CV</span>
+                        <span class="title-font font-medium" :class="$store.state.color_text_sec">souhard.pdf</span>
                         </span>
                     </button>
                         </a>
@@ -26,6 +26,18 @@
     </div>
 </template>
 
+
+
+<script>
+export default {
+
+    computed:{
+      both(){
+        return this.$store.state.color_bg+" "+ this.$store.state.color_text
+      },
+    },
+}
+</script>
 
 <style scoped>
 
