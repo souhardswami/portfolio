@@ -11,7 +11,7 @@
                 
                 <div class="flex md:ml-auto md:mr-0 mx-auto items-center flex-shrink-0 space-x-4">
                 
-                        <a href="/img/cover.b5d78ade.png" target="_blank">
+                 <a href="https://drive.google.com/file/d/1EhyR4m6sGM2U5agK5CWbe0i2m-MsDiOE/view?usp=sharing" target="_blank">
                     <button class="bg-gray-800 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-700 hover:bg-opacity-50 focus:outline-none">
                         <img id="img" src="https://assets.dryicons.com/uploads/icon/svg/7895/3a762adf-69f8-446d-90b3-296d302fd4fc.svg"/>
                         <span class="ml-4 flex items-start flex-col leading-none">
