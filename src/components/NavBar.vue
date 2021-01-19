@@ -2,7 +2,7 @@
     <div class="navbar">
             <header class=" body-font" :class="both">
                 <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-                  <a class="flex title-font font-medium items-center  mb-4 md:mb-0" >
+                  <a class="flex title-font font-medium items-center  mb-4 md:mb-0 top-head"  >
                     <img src="https://avatars0.githubusercontent.com/u/48220329?s=400&u=bdafcf2b71f19742f3e66167925d8c6796ef4b2c&v=4" id="img"/>
                     <span class="ml-3 text-xl" :class="$store.state.color_text_sec">Souhard-Swami</span>
                   </a>
@@ -51,19 +51,50 @@ export default {
 
 <style scoped>
 
-.navbar{
+/* .navbar{
   margin-top:40px;
   margin-left: 230px;
   margin-right: 230px;
+} */
+
+
+
+
+@media only screen and (min-width: 600px) {
+  .navbar{
+     
+     
+  margin-top:40px;
+  margin-left: 230px;
+  margin-right: 230px;
+    }
 }
 
 #img{
-  width:5%;
-  border-radius: 50%;
-  background-color: white;
-  border-color: #1A202C;
+     
+      border-radius: 50%;
+      background-color: white;
+      border-color: #1A202C;
 
-} 
+  } 
+
+
+@media only screen and (min-width: 600px) {
+  #img{
+      width:5%;
+  } 
+}
+
+@media only screen and (max-width: 600px) {
+  #img{
+      width:10%;
+  } 
+  .top-head{
+    /* text-align: center; */
+    margin:0  0  0 20% ;
+  }
+}
+
 .routerlinks:hover{
   
   border-bottom: 3px #9f7aea solid;

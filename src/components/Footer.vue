@@ -45,13 +45,25 @@ export default {
 
 
 <style scoped>
-.footer{
+/* .footer{
   padding-top: 10px;
   margin-top: 60px;
   border-top: #875ed8 5px solid;
   margin-left: 230px;
   margin-right: 230px;
 
+} */
+
+
+@media only screen and (min-width: 600px) {
+          .footer{
+          padding-top: 10px;
+          margin-top: 60px;
+          border-top: #875ed8 5px solid;
+          margin-left: 230px;
+          margin-right: 230px;
+
+        }
 }
 #linkedin{
   width: 20%;

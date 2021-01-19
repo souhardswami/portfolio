@@ -51,3 +51,9 @@ export default {
     },
 }
 </script>
+
+<style scoped>
+    section{
+      padding: 0 10%;
+    }
+</style>

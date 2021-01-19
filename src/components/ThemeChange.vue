@@ -51,12 +51,68 @@ export default {
 <style scoped>
 
 
-.switch {
+@media only screen and (min-width: 600px) {
+      .switch {
+          
+            position: relative;
+            display: inline-block;
+            height: 25px;
+            width: 50px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 15px;
+            width: 15px;
+            top: 5px;
+            left: 5px;
+            background-color: #9f7aea;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+        }
+
+        input:checked + .slider:before {
+            -webkit-transform: translateX(25px);
+            -ms-transform: translateX(25px);
+            transform: translateX(25px);
+        }
+}
+
+@media only screen and (max-width: 600px) {
+      .switch {
+          padding-top: 1px;
+            margin-top:14px;
+            position: relative;
+            display: inline-block;
+            height: 12px;
+            width: 24px;
+        }
+      .slider:before {
+            position: absolute;
+            content: "";
+            height: 8px;
+            width: 8px;
+            top: 2px;
+            left: 2px;
+            background-color: #9f7aea;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+        }
+
+        input:checked + .slider:before {
+            -webkit-transform: translateX(12px);
+            -ms-transform: translateX(12px);
+            transform: translateX(12px);
+        }
+}
+
+/* .switch {
 	position: relative;
 	display: inline-block;
 	height: 25px;
 	width: 50px;
-}
+} */
 
 .switch input {
 	opacity: 0;
@@ -75,7 +131,8 @@ export default {
 	-webkit-transition: 0.4s;
 	transition: 0.4s;
 }
-.slider:before {
+
+/* .slider:before {
 	position: absolute;
 	content: "";
 	height: 15px;
@@ -85,15 +142,15 @@ export default {
 	background-color: #9f7aea;
 	-webkit-transition: 0.4s;
 	transition: 0.4s;
-}
+} */
 input:checked + .slider {
     background-color: #1A202C;
 }
-input:checked + .slider:before {
+/* input:checked + .slider:before {
 	-webkit-transform: translateX(25px);
 	-ms-transform: translateX(25px);
 	transform: translateX(25px);
-}
+} */
 
 .slider.round {
 	border-radius: 30px;

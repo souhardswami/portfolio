@@ -41,10 +41,20 @@ export default {
 
 <style scoped>
 
-.lookingjob{
+/* .lookingjob{
     margin-left: 30px;
 
+} */
+
+
+@media only screen and (min-width: 600px) {
+      .lookingjob{
+            margin-left: 30px;
+
+        }
 }
+
+
 #img{
     max-width:20%;
     height:20%;
@@ -52,7 +62,7 @@ export default {
 
 }
 
-.pulse-animation {
+/* .pulse-animation {
   width: 22px;
   height: 22px;
   border-radius: 50%;
@@ -61,6 +71,19 @@ export default {
   animation: pulse 2s infinite;
   float:left;
   margin-right: 30px;
+} */
+
+@media only screen and (min-width: 600px) {
+      .pulse-animation {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: #9f7aea;
+            cursor: pointer;  
+            animation: pulse 2s infinite;
+            float:left;
+            margin-right: 30px;
+          }
 }
 .pulse-animation:hover {
   animation: none;
