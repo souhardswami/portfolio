@@ -7,7 +7,7 @@
       <section :class="both" class=" body-font">
         <div class="flex flex-col text-center w-full mb-12 py-24">
             <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4" :class="$store.state.color_text_sec">MY PROJECT</h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Currently, I am working on promise based payment project. In the payment project promise is key of payment system.</p>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">"Done some project, based on Full-stack Development. " </p>
           </div>
 
 

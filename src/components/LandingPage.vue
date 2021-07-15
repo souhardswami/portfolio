@@ -5,11 +5,11 @@
                             <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
                                 <h1 class="title-font font-medium text-3xl" :class="$store.state.color_text_sec">Souhard Swami<br><span class="text-2xl text-purple-500"> SWE/ STUDENT</span></h1>
                                 <div class="w-13 h-1 bg-purple-500 rounded mt-2 mb-4"></div>
-                                <p class="leading-relaxed mt-4"><span id="hand"> 👋 </span> Hey, I am Souhard, a third-year Computer Science undergraduate Student @ IIIT Vadodara.</p>
+                                <p class="leading-relaxed mt-4"><span id="hand"> 👋 </span> Hey, I am Souhard, a Final-year Computer Science undergraduate Student @ IIIT Vadodara.</p>
                             </div>
                 <div :class="$store.state.color_button" class="lg:w-2/6 md:w-1/2  bg-opacity-50 rounded-full p-10 flex flex-col md:ml-auto w-full mt-10 md:mt-0" >
 
-                            <img id="img" alt="ecommerce" class="rounded" src="https://media-exp1.licdn.com/dms/image/C5603AQEkJ2ZWZw6Q5A/profile-displayphoto-shrink_400_400/0/1593956775970?e=1616630400&v=beta&t=hsbTRWfCGRpBISxz0SmfR_EpPbKBgbHORGVFhDk57S0">
+                            <img id="img" alt="ecommerce" class="rounded" src="https://avatars0.githubusercontent.com/u/48220329?s=400&u=bdafcf2b71f19742f3e66167925d8c6796ef4b2c&v=4">
                 
                 </div>
             </div>
@@ -35,6 +35,9 @@ export default {
     height: 20%; */
     border-radius: 50%;
     
+    color : red;
+
+
     
 }
 
