@@ -9,7 +9,7 @@
                             </div>
                 <div :class="$store.state.color_button" class="lg:w-2/6 md:w-1/2  bg-opacity-50 rounded-full p-10 flex flex-col md:ml-auto w-full mt-10 md:mt-0" >
 
-                            <img id="img" alt="ecommerce" class="rounded" src="https://avatars0.githubusercontent.com/u/48220329?s=400&u=bdafcf2b71f19742f3e66167925d8c6796ef4b2c&v=4">
+                            <img id="img" alt="ecommerce" class="rounded" src="https://media-exp3.licdn.com/dms/image/C5603AQGCuGrsdiHNgQ/profile-displayphoto-shrink_400_400/0/1626445041713?e=1631750400&v=beta&t=ypvRQQhd4BczQy_CVHJBPrh1he4dHV2CzM9E6Dvn6AQ">
                 
                 </div>
             </div>
