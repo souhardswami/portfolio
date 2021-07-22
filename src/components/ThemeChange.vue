@@ -121,7 +121,8 @@ export default {
 }
 .slider {
         
-	background-color: #1A202C;
+	/* background-color: #1A202C; */
+	background-color: white;
 	position: absolute;
 	cursor: pointer;
 	top: 0;
@@ -144,7 +145,8 @@ export default {
 	transition: 0.4s;
 } */
 input:checked + .slider {
-    background-color: white;
+    /* background-color: white; */
+    background-color: #1A202C;
 }
 /* input:checked + .slider:before {
 	-webkit-transform: translateX(25px);

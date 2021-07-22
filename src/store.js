@@ -5,11 +5,11 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-      color:"light",
-      color_bg: "light-bg",
-      color_text: "light-text",
-      color_text_sec:"light-text-sec",
-      color_button:"light-btn"
+      color:"dark",
+      color_bg: "dark-bg",
+      color_text: "dark-text",
+      color_text_sec:"dark-text-sec",
+      color_button:"dark-btn"
 
 
   },
